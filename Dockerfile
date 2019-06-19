@@ -1,4 +1,4 @@
-#
+# Nginx for Otus LAB №10
 FROM alpine:latest
 MAINTAINER Didaktik-M
 RUN apk add --update --no-cache nginx \
