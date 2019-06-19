@@ -11,4 +11,4 @@ ADD https://raw.githubusercontent.com/didaktikm/docker_nginx/master/nginx.conf /
 ADD https://raw.githubusercontent.com/didaktikm/docker_nginx/master/index.html /www/
 EXPOSE 80
 STOPSIGNAL SIGTERM
-CMD ["nginx", "-g", "pid /tmp/nginx.pid";]
+CMD ["nginx", "-g", "daemon off;"]
