@@ -4,6 +4,7 @@ MAINTAINER Didaktik-M
 RUN apk add --update --no-cache nginx \
 && adduser -D -g 'www' www \
 && mkdir /www \
+&& mkdir -p /run/nginx \
 && chown -R www:www /var/lib/nginx \
 && chown -R www:www /www
 ADD https://raw.githubusercontent.com/didaktikm/docker_nginx/master/nginx.conf /etc/nginx/
